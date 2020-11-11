@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ConversorComponent } from './conversor.component';
-import { MoedaService } from '../services';
+import { MoedaService, ConversorService } from '../services';
 
 describe('ConversorComponent', () => {
   let component: ConversorComponent;
@@ -13,7 +13,8 @@ describe('ConversorComponent', () => {
         ConversorComponent 
       ],
       providers: [
-        MoedaService
+        MoedaService,
+        ConversorService
       ]
     })
     .compileComponents();
