@@ -5,10 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ConversorComponent } from './components/conversor.component';
 import { MoedaService, ConversorService } from './services';
+import { NumeroDirective } from './directives';
+import { ModalCotacaoComponent } from './utils';
+import { DataBrPipe } from './pipes';
 
 @NgModule({
   declarations: [
-    ConversorComponent
+    ConversorComponent,
+    NumeroDirective,
+    ModalCotacaoComponent,
+    DataBrPipe
   ],
   imports: [
     CommonModule,

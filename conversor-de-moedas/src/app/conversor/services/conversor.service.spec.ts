@@ -18,7 +18,7 @@ describe('ConversorService', () => {
     service = TestBed.inject(ConversorService);
   });
 
-  it('should be created', () => {
+  it('should ...', inject([ConversorService], (service: ConversorService) => {
     expect(service).toBeTruthy();
-  });
+  }));
 });
